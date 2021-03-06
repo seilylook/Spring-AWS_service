@@ -1,11 +1,14 @@
 package com.jojoldu.book.springboot.web.dto;
 
 import com.jojoldu.book.springboot.domain.posts.Posts;
-import com.jojoldu.book.springboot.service.posts.PostsService;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+@Getter
+@NoArgsConstructor
 public class PostsSaveRequestDto {
 
     private String title;
