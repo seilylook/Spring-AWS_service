@@ -12,7 +12,6 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
@@ -38,7 +37,6 @@ public class PostsApiControllerTest {
     }
 
     @Test
-    @WithMockUser(roles="USER")
     public void Posts_등록된다() throws Exception {
         //given
         String title = "title";
